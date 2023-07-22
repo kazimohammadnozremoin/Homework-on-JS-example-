@@ -1,0 +1,770 @@
+	
+	<!doctype html> 
+	<html lang="en"> 
+	<head> 
+	<!-- meta --> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Homework on JQ Example</title> 
+
+	<!-- css links -->
+	<link rel="stylesheet" href="css/bootstrap.css"> 
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/media.css"> 
+	
+	</head> 
+	<body>
+		<!-- text change -->
+<div class="container">
+	<h1 class="text-danger">Click the button to change the text</h1>
+	<button type="button" class="btn btn-dark my-2" onclick="textChange()">Text Change
+	</button>
+	</div>
+	<h2 id="h2">Hello World!</h2>
+
+	<!-- text show/hide -->
+
+<div class="container">
+	<h1 class="text-danger">Click the button to show/hide the text</h1>
+	<button type="button" class="btn btn-success" onclick="textShow()">Show
+	</button>
+	<button type="button" class="btn btn-dark" onclick="textHide()">Hide
+	</button>
+	<h2 id="tsh">Lorem ipsum dolor sit amet.</h2>
+	</div>
+
+	<!-- show date -->
+
+	<div class="container">
+	<h1 class="text-danger">Click the button to show the date</h1>
+	<button type="button" class="btn btn-dark " onclick="">Show Date
+	</button>
+	<h2 id="tsd">Date</h2>
+	</div>
+	<!-- bulb on/off -->
+	<div class="container">
+	<h1 class="text-danger">Click the button to on/off the bulb </h1>
+	<button type="button" class="btn btn-success" onclick="bulbOn()">On
+	</button>
+	<button type="button" class="btn btn-dark" onclick="bulbOff()">Off
+	</button>
+	<img id="bulb"
+	src="images/bulboff2.gif" alt="">
+	</div>
+		
+<html>
+<body>
+<script>  
+var a=10;  
+var b=20;  
+var c=a+b;//It adds values of a and b variable  
+document.write(c);//prints sum of 10 and 20  
+</script>   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Comments</h2>
+
+<p id="ver"></p>
+
+<script>
+let x = 5;      // Declare x, give it the value of 5
+let y = x + 2;  // Declare y, give it the value of x + 2 
+// Write y to demo:
+document.getElementById("ver").innerHTML = y;
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="myH"></h1>
+<p id="myP"></p>
+<script>
+document.getElementById("myH").innerHTML = "JavaScript Comments";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Comments</h2>
+
+<h1 id="myH"></h1>
+
+<p id="myP"></p>
+
+<script>
+//document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+
+<p>The line starting with // is not executed.</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Variables</h1>
+
+<p>In this example, m, n, and o are variables.</p>
+
+<p id="var"></p>
+
+<script>
+let m = 5;
+let n = 6;
+let o = m + n;
+document.getElementById("var").innerHTML =
+"The value of o is: " + o;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="pr"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("pr").innerHTML =
+"The total is: " + total;
+</script>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclaring a Variable Using var</h2>
+
+<p id="red"></p>
+
+<script>
+var  p = 10;
+// Here x is 10
+
+{  
+var p = 2;
+// Here p is 2
+}
+
+// Here p is 2
+document.getElementById("red").innerHTML = p;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript let</h2>
+
+<p>Redeclaring a variable with <b>let</b>, in another scope, or in another block, is allowed:</p>
+
+<p id="rc"></p>
+
+<script>
+let r = 5;   // Allowed
+
+{
+  let r = 3;   // Allowed
+}
+
+{
+  let r = 4;   // Allowed
+}
+document.getElementById("rc").innerHTML = r;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+<p id="car"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("car").innerHTML = cars; 
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+
+<p id="carw"></p>
+
+<script>
+// Create an object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// Change a property:
+car.color = "red";
+
+// Add a property:
+car.owner = "kazi moin";
+
+// Display the property:
+document.getElementById("carw").innerHTML = "Car owner is " + car.owner; 
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The Assignment (=) Operator</h2>
+
+<p id="oper"></p>
+
+<script>
+// Assign the value 5 to e
+let e = 5;
+// Assign the value 2 to f
+let f = 2;
+// Assign the value e + f to g
+let g = e + f;
+// Display g
+document.getElementById("oper").innerHTML = "The sum of e + f is: " + g;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>The * Operator</h2>
+
+<p id="mult"></p>
+
+<script>
+let i = 5;
+let j = 2;
+let k = i * j;
+document.getElementById("mult").innerHTML = k;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arithmetic</h2>
+<p>A typical arithmetic operation takes two numbers (or variables) and produces a new number.</p>
+
+<p id="arit"></p>
+
+<script>
+let s = 100;
+let t = 50;
+let u = s + t;
+document.getElementById("arit").innerHTML = u;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>Arithmetic Operations</h2>
+<p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+<p id="javar"></p>
+
+<script>
+let q = 3;
+let w = (100 + 50) * q;
+document.getElementById("javar").innerHTML = w;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Assignments</h1>
+<h2>Addition Assignment</h2>
+<h3>The += Operator</h3>
+
+<p id="addi"></p>
+
+<script>
+let v = 10;
+v += 5;
+document.getElementById("addi").innerHTML = "Value of v is: " + v;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="expr"></p>
+
+<script>
+let d = 16 + 4 + "Volvo";
+document.getElementById("expr").innerHTML = d;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Data Types</h2>
+
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="data"></p>
+
+<script>
+let h;         // Now h is undefined
+h = 5;         // Now h is a Number
+h = "kazi moin";    // Now h is a String
+
+document.getElementById("data").innerHTML = h;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="obj"></p>
+
+<script>
+// Create an object:
+const vehicle = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("obj").innerHTML = "The vehicle type is " + vehicle.type;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if</h2>
+
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="ifd">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("ifd").innerHTML = "Good day!";
+}
+</script>
+
+</body>
+</html>
+
+<p id="day"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Saturday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Sunday";
+}
+document.getElementById("day").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="numbr"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("numbr").innerHTML = text;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For In Loop</h2>
+<p>The for in statement loops through the properties of an object:</p>
+
+<p id="intro"></p>
+
+<script>
+const person = {fname:"Kazi", lname:"Moin", age:49}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("intro").innerHTML = txt;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="brk"></p>
+
+<script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("brk").innerHTML = text;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Iterables</h2>
+<p>Iterate over a String:</p>
+
+<p id="iter"></p>
+
+<script>
+// Create a String
+const name = "W3Schools";
+
+// List all Elements
+let texts = ""
+for (const j of name) {
+  texts += j + "<br>";
+}
+
+document.getElementById("iter").innerHTML = texts;
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>Add values to a Set:</p>
+
+<p id="set"></p>
+
+<script>
+// Create a Set
+const letters = new Set();
+
+// Add Values to the Set
+letters.add("l");
+letters.add("B");
+letters.add("K");
+
+// Display set.size
+document.getElementById("set").innerHTML = letters.size;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="loop"></p>
+
+<script>
+let texte = "";
+let M = 0;
+while (M < 10) {
+  texte += "<br>The number is " + M;
+  M++;
+}
+document.getElementById("loop").innerHTML = texte;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Of Loop</h2>
+<p>The for of statement loops through the values of any iterable object:</p>
+
+<p id="loo"></p>
+
+<script>
+const transports = ["BMW", "Volvo", "Mini"];
+
+let textn = "";
+for (let P of transports) {
+  textn += P + "<br>";
+}
+
+document.getElementById("loo").innerHTML = textn;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Comparison</h1>
+<h2>The () ? : Ternary Operator</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="comp"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+  let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("comp").innerHTML = voteable + " to vote.";
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<p>Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both 
+included):</p>
+
+<p id="ran"></p>
+
+<script>
+document.getElementById("ran").innerHTML =
+Math.floor(Math.random() * 10);
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript ISO Dates</h2>
+
+<p id="dat"></p>
+
+<script>
+const D = new Date("2023-07-23");
+document.getElementById("dat").innerHTML = D;
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>How to use <b>catch</b> to display an error.</p>
+
+<p id="err"></p>
+
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("err").innerHTML = err.message;
+}
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+<!-- js links --> 
+<script src="js/bootstrap.bundle.min.js">
+<script src="js/script.js">
+<html>
+<body>
+<script>  
+var a=10;  
+var b=20;  
+var c=a+b;//It adds values of a and b variable  
+document.write(c);//prints sum of 10 and 20  
+</script>   
+</body>
+</html>
+</script> 
+<html>
+<body>
+<script>
+var data=200;//gloabal variable  
+function a(){  
+document.writeln(data);  
+}  
+function b(){  
+document.writeln(data);  
+}  
+a();//calling JavaScript function
+b();
+  
+ </script>
+</body>
+</html>
+
+<html>
+<body>
+<script>
+function m(){  
+window.value=100;//declaring global variable by window object  
+}  
+function n(){  
+alert(window.value);//accessing global variable from other function  
+}  
+m();
+n();
+</script>
+</body>
+</html>
+
+
+
+
+</script> 
+
+	</body> 
+	</html>
